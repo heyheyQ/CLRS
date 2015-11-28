@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>CLRS by heyheyQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">CLRS</h1>
+      <h2 class="project-tagline">Implementation of algorithms in Introduction to Algorithms, 3rd ed (CLRS) in C language</h2>
+      <a href="https://github.com/heyheyQ/CLRS" class="btn">View on GitHub</a>
+      <a href="https://github.com/heyheyQ/CLRS/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/heyheyQ/CLRS/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h2>
+<a id="insertion-sort" class="anchor" href="#insertion-sort" aria-hidden="true"><span class="octicon octicon-link"></span></a>Insertion sort</h2>
+
+<ul>
+<li>Implement insertion sort to sort an array in either ascending or descending order</li>
+<li>Implement insertion sort using binary-search to find where to insert an element</li>
+<li>Find the unique locally maximum element A[m] such that A[m-1] &lt; A[m] and A[m+1] &lt; A[m] in an array A<a href="array%20A%20is%20unimodal">1..n</a>
+</li>
+</ul>
+
+<h2>
+<a id="divide-and-conquer" class="anchor" href="#divide-and-conquer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Divide and Conquer</h2>
+
+<ul>
+<li>Maximum subarray problem:
+
+<ul>
+<li>Recursively finds the maximum-subarray which has the greatest sum of any contiguous subarray of the given array</li>
+</ul>
+</li>
+<li>The Strassen's method of martix multiplication:
+
+<ul>
+<li>Improve the recursive version of two-square-matrices multiplication; the method reduces the number of recursive multiplications from eight to seven.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="heapsort" class="anchor" href="#heapsort" aria-hidden="true"><span class="octicon octicon-link"></span></a>Heapsort</h2>
+
+<ul>
+<li>In a max-heap, the max-heap property is that for every node i other than the root, A[parent(i)] &gt;= A[i].
+
+<ul>
+<li>Maintain the max-heap property of an array in recursion</li>
+<li>Implement the build-max-heap procedure which produces a max-heap from an unordered input array</li>
+<li>Implement the heapsort procedure which runs in O(nlgn) time to sort an array in place</li>
+</ul>
+</li>
+<li>Implement a priority-queue using heapsort</li>
+<li>Merge k sorted lists into one sorted list using a min-heap</li>
+</ul>
+
+<h2>
+<a id="quicksort" class="anchor" href="#quicksort" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quicksort</h2>
+
+<ul>
+<li>Implement quicksort in a divide-and-conquer fashion</li>
+<li>Implement a randomized version of quicksort with the pivot element to partition the array randomly chosen</li>
+<li>Implement an iterative version of quicksort to avoid stack overflow</li>
+</ul>
+
+<h2>
+<a id="medians-and-order-statistics" class="anchor" href="#medians-and-order-statistics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Medians and Order Statistics</h2>
+
+<ul>
+<li>Find the median of all 2n elements in arrays X and Y</li>
+<li>Find the weighted median:
+
+<ul>
+<li>The weighted median is the element xk satisfying sum(wi, xixk) &lt;= 1/2, wi is the corresponding weight of element xi in array x[1..n].</li>
+</ul>
+</li>
+<li>Select the ith smallest of n elements</li>
+<li>List the kth quantiles of a set using randomized select functions:
+
+<ul>
+<li>The kth quantiles of an n-element set are the k-1 order statistics that divide the sorted set into k equal-sized sets. </li>
+</ul>
+</li>
+<li>Determine the k numbers in S that are closest to the median of S, using randomized select functions</li>
+</ul>
+
+<h2>
+<a id="binary-search-trees" class="anchor" href="#binary-search-trees" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Search Trees</h2>
+
+<ul>
+<li>Perform an inorder tree walk in a non-recursive fashion</li>
+<li>Perform preorder and postorder tree walks in a recursive fashion</li>
+<li>Search for a key stored in a binary search tree</li>
+<li>Maintain the binary-search-tree property with the Transplant procedure which replaces one subtree as a child of its parent with another subtree</li>
+<li>Search for and delete the key from the tree</li>
+<li>Insert the key to the tree</li>
+</ul>
+
+<h2>
+<a id="red-black-trees" class="anchor" href="#red-black-trees" aria-hidden="true"><span class="octicon octicon-link"></span></a>Red-Black Trees</h2>
+
+<ul>
+<li>Implements rotation operations which are local operations in a search tree that preserves the binary-search-tree property</li>
+<li>Insert/delete a node into/from an n-node red-black tree</li>
+<li>Operate a persistent binary search tree by maintaining past versions of the tree</li>
+<li>Implement an AVL tree:
+
+<ul>
+<li>For each node x in an AVL tree, the heights of the left and right subtrees of x differ by at most 1.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="dynamic-programming" class="anchor" href="#dynamic-programming" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dynamic Programming</h2>
+
+<ul>
+<li>Solve rod-cutting problem to maximize obtainable revenue rn by cutting up the rod and selling the pieces</li>
+<li>Solve the problem of matrix-chain multiplication to minimize cost of evaluating the product</li>
+<li>Given two character strings X = {x1, x2, ..., xm} and Y = {y1, y2, ..., yn}, solve the longest common subsequence problem</li>
+<li>Solve the problem of optimal binary search trees:
+
+<ul>
+<li>Construct a binary search tree whose expected search cost is smallest, with each key ki having a probability pi</li>
+</ul>
+</li>
+<li>Find the longest monotonically increasing subsequence of a sequence of n numbers
+
+<ul>
+<li>A brute force method</li>
+<li>A dynamic programming method</li>
+</ul>
+</li>
+<li>Find longest palindrome subsequence of a given input string</li>
+<li>Print the given paragraph neatly on a number of lines that hold a maximum of M characters each</li>
+<li>Subset-sum problem:
+
+<ul>
+<li>Decide whether there exists a subset of S = {x1, x2, ..., xn} that adds up exactly to the target value t</li>
+<li>A brute force method</li>
+<li>A dynamic programming method</li>
+</ul>
+</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/heyheyQ/CLRS">CLRS</a> is maintained by <a href="https://github.com/heyheyQ">heyheyQ</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
